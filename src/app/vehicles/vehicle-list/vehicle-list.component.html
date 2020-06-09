@@ -1,0 +1,12 @@
+<table class="table table-hover">
+  <tr *ngFor="let ve of listVehicles">
+  <td (click)="editForm(ve)" > {{ve.id}}</td>
+  <td (click)="editForm(ve)" >{{ve.placa}}</td>
+  <td (click)="editForm(ve)" >{{ve.chassi}}</td>
+  <td (click)="editForm(ve)" >{{ve.renavam}}</td>
+  <td (click)="editForm(ve)" >{{ve.modelo}}</td>
+  <td (click)="editForm(ve)" >{{ve.marca}}</td>
+  <td (click)="editForm(ve)" >{{ve.ano}}</td>
+  <td><button (click)="onDelete(ve.id)" class="btn btn-sm btn-outline-danger">X</button></td>
+</tr>
+</table>  
